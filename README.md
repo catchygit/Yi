@@ -77,9 +77,7 @@
 
 ## Models
 
-Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
-
-If you want to deploy Yi models, make sure you meet the [software and hardware requirements](#requirements).
+Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. If you want to deploy Yi models, make sure you meet the [software and hardware requirements](#requirements).
 
 ### Chat models
 
@@ -575,8 +573,6 @@ You can access the web UI by entering the address provided in the console into y
 </p>
 
 ### Requirements
-
-If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
 
 #### Software requirements
 
