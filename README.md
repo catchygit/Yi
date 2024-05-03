@@ -530,10 +530,6 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
-
 ### Web demo
 
 <details>
@@ -564,17 +560,9 @@ You can access the web UI by entering the address provided in the console into y
 
 [For details on fine-tuning.](https://github.com/catchygit/Yi/wiki/Fine-tuning)
 
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
-
 ### Quantization
 
 [For details on quantization.](https://github.com/catchygit/Yi/wiki/Quantization)
-
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
 
 ### Requirements
 
