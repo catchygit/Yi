@@ -537,7 +537,7 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 ### Web demo
 
 <details>
-<summary>You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario). ⬇️</summary>
+<summary>You can build a web UI demo for Yi chat models (note that Yi base models are not supported in this scenario). ⬇️</summary>
 <br>
 
 
