@@ -214,7 +214,7 @@ If you want to chat with Yi with more customizable options (e.g., system prompt,
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Quick start - pip 
+## Quick start - pip 
 
 This tutorial guides you through every step of running **Yi-34B-Chat locally on an A800 (80G)** and then performing inference.
 
@@ -354,7 +354,7 @@ You can perform inference with Yi chat or base models as below.
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Quick start - Docker 
+## Quick start - Docker 
 <details>
 <summary> Run Yi-34B-chat locally with Docker: a step-by-step guide. ⬇️</summary> 
 <br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> or <strong>4*4090</strong> locally and then performing inference.
@@ -379,7 +379,7 @@ ghcr.io/01-ai/yi:latest
     <p><strong>Note</strong> that the only difference is to set <code>--model &lt;your-model-mount-path&gt;'</code> instead of <code>model &lt;your-model-path&gt;</code>.</p>
 </details>
 
-### Quick start - conda-lock
+## Quick start - conda-lock
 
 <details>
 <summary>You can use <code><a href="https://github.com/conda/conda-lock">conda-lock</a></code> to generate fully reproducible lock files for conda environments. ⬇️</summary>
@@ -394,7 +394,7 @@ To install the dependencies, follow these steps:
 </details>
 
 
-### Quick start - llama.cpp
+## Quick start - llama.cpp
 <a href="https://github.com/01-ai/Yi/blob/main/docs/README_llama.cpp.md">The following tutorial </a> will guide you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.
 <details>
 <summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide. ⬇️</summary> 
