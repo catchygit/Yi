@@ -80,11 +80,11 @@
 
 <hr>
 
-## Models
+# Models
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. If you want to deploy Yi models, make sure you meet the [software and hardware requirements](#requirements).
 
-### Chat models
+## Chat models
 
 | Model | Download  
 |---|---
@@ -98,7 +98,7 @@ Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-C
 
 <sub><sup> - 4-bit series models are quantized by AWQ. <br> - 8-bit series models are quantized by GPTQ <br> - All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090). </sup></sub>
 
-### Base models
+## Base models
 
 | Model | Download | 
 |---|---|
@@ -111,7 +111,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 <sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  <br> - If you want to use the previous version of the Yi-34B-200K (released on Nov 5, 2023), run `git checkout 069cd341d60f4ce4b07ec394e82b79e94f656cf` to download the weight. </sup></sub>
 
-### Model info
+## Model info
 <details style="display: inline;"><summary>For details on chat and base models.</summary>
 
 <table>
