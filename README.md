@@ -79,7 +79,7 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
-If you want to deploy Yi models, make sure you meet the [software and hardware requirements](#deployment).
+If you want to deploy Yi models, make sure you meet the [software and hardware requirements](#requirements).
 
 ### Chat models
 
@@ -109,9 +109,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 <sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  <br> - If you want to use the previous version of the Yi-34B-200K (released on Nov 5, 2023), run `git checkout 069cd341d60f4ce4b07ec394e82b79e94f656cf` to download the weight. </sup></sub>
 
 ### Model info
-<details style="display: inline;"><summary>For chat model limitations, see the explanations below. ⬇️</summary>
-- For chat and base models
-
+<details style="display: inline;"><summary>For details on chat and base models. ⬇️</summary>
 <table>
 <thead>
 <tr>
