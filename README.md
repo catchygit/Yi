@@ -164,22 +164,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 </p>
 
 
-# How to use Yi?
-
-- [Quick start](#quick-start)
-  - [Choose your path](#choose-your-path)
-  - [pip](#quick-start---pip)
-  - [docker](#quick-start---docker)
-  - [conda-lock](#quick-start---conda-lock)
-  - [llama.cpp](#quick-start---llamacpp)
-  - [Web demo](#web-demo)
-- [Fine-tuning](#fine-tuning)
-- [Quantization](#quantization)
-- [Deployment](#deployment)
-- [FAQ](#faq)
-- [Learning hub](#learning-hub)
-
-## Quick start
+# Quick start
 
 Getting up and running with Yi models is simple with multiple choices available. 
 
