@@ -66,6 +66,11 @@
 
 - [Models](#models)
 - [Quick start](#quick-start)
+  - [pip](#quick-start---pip)
+  - [docker](#quick-start---docker)
+  - [llama.cpp](#quick-start---llamacpp)
+  - [conda-lock](#quick-start---conda-lock)
+  - [Web demo](#web-demo)
 - [Fine-tuning](#fine-tuning)
 - [Quantization](#quantization)
 - [Requirements](#requirements)
