@@ -614,9 +614,68 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 
 # Benchmarks 
 
-See the following pages for detailed benchmarking:
-- [Chat model performance](https://github.com/catchygit/Yi/wiki/Benchmarks#chat-model-performance)
-- [Base model performance](https://github.com/catchygit/Yi/wiki/Benchmarks#base-model-performance)
+<details><summary>See the following for detailed benchmarking ⬇️</summary>
+
+### Chat model performance
+
+Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
+
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true) 
+
+<details>
+<summary> Evaluation methods and challenges. ⬇️ </summary>
+
+- **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
+- **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
+- **Evaluation strategy**: our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text.
+- **Challenges faced**: some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results.
+
+<strong>*</strong>: C-Eval results are evaluated on the validation datasets
+</details>
+
+### Base model performance
+
+#### Yi-34B and Yi-34B-200K 
+
+The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMMLU, common-sense reasoning, reading comprehension, and more.
+
+![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
+
+<details>
+<summary> Evaluation methods. ⬇️</summary>
+
+- **Disparity in results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
+- **Investigation findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
+- **Uniform benchmarking process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
+- **Efforts to retrieve unreported scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
+- **Extensive model evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
+- **Special configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
+- **Falcon-180B caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
+</details>
+
+#### Yi-9B
+
+Yi-9B is almost the best among a range of similar-sized open-source models (including Mistral-7B, SOLAR-10.7B, Gemma-7B, DeepSeek-Coder-7B-Base-v1.5 and more), particularly excelling in code, math, common-sense reasoning, and reading comprehension.
+
+![Yi-9B benchmark - details](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_details.png?raw=true)
+
+- In terms of **overall** ability (Mean-All), Yi-9B performs the best among similarly sized open-source models, surpassing DeepSeek-Coder, DeepSeek-Math, Mistral-7B, SOLAR-10.7B, and Gemma-7B.
+
+  ![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
+
+- In terms of **coding** ability (Mean-Code), Yi-9B's performance is second only to DeepSeek-Coder-7B, surpassing Yi-34B, SOLAR-10.7B, Mistral-7B, and Gemma-7B.
+
+  ![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
+
+- In terms of **math** ability (Mean-Math), Yi-9B's performance is second only to DeepSeek-Math-7B, surpassing SOLAR-10.7B, Mistral-7B, and Gemma-7B.
+
+  ![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
+
+- In terms of **common sense and reasoning** ability (Mean-Text), Yi-9B's performance is on par with Mistral-7B, SOLAR-10.7B, and Gemma-7B.
+
+  ![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
+
+</details>
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
