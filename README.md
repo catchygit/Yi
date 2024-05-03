@@ -557,17 +557,17 @@ You can access the web UI by entering the address provided in the console into y
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Fine-tuning
+# Fine-tuning
 
 [See our wiki page for details on fine-tuning.](https://github.com/catchygit/Yi/wiki/Fine-tuning)
 
-### Quantization
+# Quantization
 
 [See our wiki page for details on quantization.](https://github.com/catchygit/Yi/wiki/Quantization)
 
-### Requirements
+# Requirements
 
-#### Software requirements
+## Software requirements
 
 Before using Yi quantized models, make sure you've installed the correct software listed below.
 
@@ -576,11 +576,11 @@ Before using Yi quantized models, make sure you've installed the correct softwar
 Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
 Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
 
-#### Hardware requirements
+## Hardware requirements
 
 Before deploying Yi in your environment, make sure your hardware meets the following requirements.
 
-##### Chat models
+### Chat models
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
 |:----------------------|:--------------|:-------------------------------------:|
@@ -602,7 +602,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 | Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
 | Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
 
-##### Base models
+### Base models
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
 |----------------------|--------------|:-------------------------------------:|
@@ -616,7 +616,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-## Benchmarks 
+# Benchmarks 
 
 See the following pages for detailed benchmarking:
 - [Chat model performance](https://github.com/catchygit/Yi/wiki/Benchmarks#chat-model-performance)
@@ -628,7 +628,7 @@ See the following pages for detailed benchmarking:
 
 # Disclaimers
 
-### Who can use Yi?
+## Who can use Yi?
 
 Everyone! 🙌 ✅
 
@@ -636,14 +636,14 @@ Everyone! 🙌 ✅
   
 - For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
 
-### Acknowledgments
+## Acknowledgments
 
 A heartfelt thank you to each of you who have made contributions to the Yi community! You have helped Yi not just a project, but a vibrant, growing home for innovation.
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
 
-### Disclaimer
+## Disclaimer
 
 We use data compliance checking algorithms during the training process, to
 ensure the compliance of the trained model to the best of our ability. Due to
@@ -654,7 +654,7 @@ problematic outputs. We will not be responsible for any risks and issues
 resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
 
-### License
+## License
 
 The source code in this repo is licensed under the [Apache 2.0
 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use, with automatic permission granted upon application. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
