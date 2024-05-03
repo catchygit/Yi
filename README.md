@@ -69,7 +69,7 @@
 - [Fine-tuning](#fine-tuning)
 - [Quantization](#quantization)
 - [Requirements](#requirements)
-- [Misc.](#misc)
+- [Disclaimers](#disclaimers)
 
 </details>
 
@@ -565,9 +565,17 @@ You can access the web UI by entering the address provided in the console into y
 
 [For details on fine-tuning.](https://github.com/catchygit/Yi/wiki/Fine-tuning)
 
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
 ### Quantization
 
 [For details on quantization.](https://github.com/catchygit/Yi/wiki/Quantization)
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### Requirements
 
@@ -628,7 +636,11 @@ See the following pages for detailed benchmarking:
 - [Chat model performance](https://github.com/catchygit/Yi/wiki/Benchmarks#chat-model-performance)
 - [Base model performance](https://github.com/catchygit/Yi/wiki/Benchmarks#base-model-performance)
 
-# Misc.
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
+# Disclaimers
 
 ### Who can use Yi?
 
@@ -638,19 +650,12 @@ Everyone! 🙌 ✅
   
 - For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
 
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
-
 ### Acknowledgments
 
 A heartfelt thank you to each of you who have made contributions to the Yi community! You have helped Yi not just a project, but a vibrant, growing home for innovation.
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
 
 ### Disclaimer
 
@@ -662,10 +667,6 @@ scenarios. Please be aware that there is still a risk of the model producing
 problematic outputs. We will not be responsible for any risks and issues
 resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
-
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
 
 ### License
 
