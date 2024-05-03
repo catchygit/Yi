@@ -62,25 +62,15 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-- [What is Yi?](#what-is-yi)
-  - [Introduction](#introduction)
-  - [Models](#models)
-    - [Chat models](#chat-models)
-    - [Base models](#base-models)
-    - [Model info](#model-info)
-- [How to use Yi?](#how-to-use-yi)
-  - [Quick start](#quick-start)
-    - [Choose your path](#choose-your-path)
-    - [pip](#quick-start---pip)
-    - [docker](#quick-start---docker)
-    - [llama.cpp](#quick-start---llamacpp)
-    - [conda-lock](#quick-start---conda-lock)
-    - [Web demo](#web-demo)
+- [Models](#models)
+- [Quick start](#quick-start)
+  - [Choose your path](#choose-your-path)
+  - [pip](#quick-start---pip)
+  - [docker](#quick-start---docker)
+  - [llama.cpp](#quick-start---llamacpp)
+  - [conda-lock](#quick-start---conda-lock)
+  - [Web demo](#web-demo)
 - [Misc.](#misc)
-  - [Who can use Yi?](#who-can-use-yi)
-  - [Acknowledgements](#acknowledgments)
-  - [Disclaimer](#disclaimer)
-  - [License](#license)
 
 </details>
 
