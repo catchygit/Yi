@@ -72,6 +72,9 @@
   - [llama.cpp](#quick-start---llamacpp)
   - [conda-lock](#quick-start---conda-lock)
   - [Web demo](#web-demo)
+- [Fine-tuning](#fine-tuning)
+- [Quantization](#quantization)
+- [Requirements](#requirements)
 - [Misc.](#misc)
 
 </details>
@@ -572,7 +575,7 @@ You can access the web UI by entering the address provided in the console into y
 
 [For details on quantization.](https://github.com/catchygit/Yi/wiki/Quantization)
 
-### Deployment
+### Requirements
 
 If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
 
@@ -624,19 +627,6 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
-
-### Citation
-
-```
-@misc{ai2024yi,
-    title={Yi: Open Foundation Models by 01.AI},
-    author={01. AI and : and Alex Young and Bei Chen and Chao Li and Chengen Huang and Ge Zhang and Guanwei Zhang and Heng Li and Jiangcheng Zhu and Jianqun Chen and Jing Chang and Kaidong Yu and Peng Liu and Qiang Liu and Shawn Yue and Senbin Yang and Shiming Yang and Tao Yu and Wen Xie and Wenhao Huang and Xiaohui Hu and Xiaoyi Ren and Xinyao Niu and Pengcheng Nie and Yuchi Xu and Yudong Liu and Yue Wang and Yuxuan Cai and Zhenyu Gu and Zhiyuan Liu and Zonghong Dai},
-    year={2024},
-    eprint={2403.04652},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
-```
 
 ## Benchmarks 
 
