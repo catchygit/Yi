@@ -57,9 +57,9 @@
 
 <!-- DO NOT REMOVE ME -->
 
-🤖 The Yi series models are the next generation of open-source large language models trained from scratch by [01.AI](https://01.ai/). Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more.
-
 <hr>
+
+🤖 The Yi series models are the next generation of open-source large language models trained from scratch by [01.AI](https://01.ai/). Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more.
 
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
