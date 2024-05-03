@@ -65,6 +65,7 @@
 <summary></b>📕 Table of Contents</b></summary>
 
 - [Models](#models)
+- [Requirements](#requirements)
 - [Quick start](#quick-start)
   - [pip](#quick-start---pip)
   - [docker](#quick-start---docker)
@@ -73,7 +74,6 @@
   - [Web demo](#web-demo)
 - [Fine-tuning](#fine-tuning)
 - [Quantization](#quantization)
-- [Requirements](#requirements)
 - [Disclaimers](#disclaimers)
 
 </details>
@@ -153,6 +153,58 @@ However, this higher diversity might amplify certain existing issues, including:
 - Non-determinism in re-generation: When attempting to regenerate or sample responses, inconsistencies in the outcomes may occur. The increased diversity can lead to varying results even under similar input conditions.
 - Cumulative Error: This occurs when errors in the model's responses compound over time. As the model generates more diverse responses, the likelihood of small inaccuracies building up into larger errors increases, especially in complex tasks like extended reasoning, mathematical problem-solving, etc.
 - To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as temperature, top_p, or top_k. These adjustments can help in the balance between creativity and coherence in the model's outputs.
+
+</details>
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
+# Requirements
+
+<details>
+<summary>Before using Yi quantized models, make sure you've installed the correct software listed below. ⬇️</summary> 
+
+| Model | Software
+|---|---
+Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
+Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
+</details>
+
+<details>
+<summary>Before deploying Yi in your environment, make sure your hardware meets the following requirements. ⬇️</summary> 
+
+### Chat models
+
+| Model                | Minimum VRAM |        Recommended GPU Example       |
+|:----------------------|:--------------|:-------------------------------------:|
+| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br>  1 x A10 (24 GB)  <br> 1 x A30 (24 GB)              |
+| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 (12 GB)<br> 1 x RTX 4060 (8 GB)                   |
+| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 (8 GB) <br> 1 x RTX 4060 (8 GB)                   |
+| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 (24 GB)<br> 1 x A800 (80GB)               |
+| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)  <br> 1 x A100 (40 GB) |
+| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090 (24 GB) <br> 2 x RTX 4090 (24 GB)<br> 1 x A800  (40 GB) |
+
+Below are detailed minimum VRAM requirements under different batch use cases.
+
+|  Model                  | batch=1 | batch=4 | batch=16 | batch=32 |
+| ----------------------- | ------- | ------- | -------- | -------- |
+| Yi-6B-Chat              | 12 GB   | 13 GB   | 15 GB    | 18 GB    |
+| Yi-6B-Chat-4bits  | 4 GB    | 5 GB    | 7 GB     | 10 GB    |
+| Yi-6B-Chat-8bits  | 7 GB    | 8 GB    | 10 GB    | 14 GB    |
+| Yi-34B-Chat       | 65 GB   | 68 GB   | 76 GB    | > 80 GB   |
+| Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
+| Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
+
+### Base models
+
+| Model                | Minimum VRAM |        Recommended GPU Example       |
+|----------------------|--------------|:-------------------------------------:|
+| Yi-6B                | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)                |
+| Yi-6B-200K           | 50 GB         | 1 x A800 (80 GB)                            |
+| Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
+| Yi-34B               | 72 GB         | 4 x RTX 4090 (24 GB) <br> 1 x A800 (80 GB)               |
+| Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
 </details>
 
@@ -560,122 +612,11 @@ You can access the web UI by entering the address provided in the console into y
 
 [See our wiki page for details on quantization.](https://github.com/catchygit/Yi/wiki/Quantization)
 
-# Requirements
-
-<details>
-<summary>Before using Yi quantized models, make sure you've installed the correct software listed below. ⬇️</summary> 
-
-| Model | Software
-|---|---
-Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
-Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
-</details>
-
-<details>
-<summary>Before deploying Yi in your environment, make sure your hardware meets the following requirements. ⬇️</summary> 
-
-### Chat models
-
-| Model                | Minimum VRAM |        Recommended GPU Example       |
-|:----------------------|:--------------|:-------------------------------------:|
-| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br>  1 x A10 (24 GB)  <br> 1 x A30 (24 GB)              |
-| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 (12 GB)<br> 1 x RTX 4060 (8 GB)                   |
-| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 (8 GB) <br> 1 x RTX 4060 (8 GB)                   |
-| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 (24 GB)<br> 1 x A800 (80GB)               |
-| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)  <br> 1 x A100 (40 GB) |
-| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090 (24 GB) <br> 2 x RTX 4090 (24 GB)<br> 1 x A800  (40 GB) |
-
-Below are detailed minimum VRAM requirements under different batch use cases.
-
-|  Model                  | batch=1 | batch=4 | batch=16 | batch=32 |
-| ----------------------- | ------- | ------- | -------- | -------- |
-| Yi-6B-Chat              | 12 GB   | 13 GB   | 15 GB    | 18 GB    |
-| Yi-6B-Chat-4bits  | 4 GB    | 5 GB    | 7 GB     | 10 GB    |
-| Yi-6B-Chat-8bits  | 7 GB    | 8 GB    | 10 GB    | 14 GB    |
-| Yi-34B-Chat       | 65 GB   | 68 GB   | 76 GB    | > 80 GB   |
-| Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
-| Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
-
-### Base models
-
-| Model                | Minimum VRAM |        Recommended GPU Example       |
-|----------------------|--------------|:-------------------------------------:|
-| Yi-6B                | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)                |
-| Yi-6B-200K           | 50 GB         | 1 x A800 (80 GB)                            |
-| Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
-| Yi-34B               | 72 GB         | 4 x RTX 4090 (24 GB) <br> 1 x A800 (80 GB)               |
-| Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
-
-</details>
-
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
-
 # Benchmarks 
 
-<details><summary>See the following for detailed benchmarking ⬇️</summary>
-
-### Chat model performance
-
-Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
-
-![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true) 
-
-<details>
-<summary> Evaluation methods and challenges. ⬇️ </summary>
-
-- **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
-- **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
-- **Evaluation strategy**: our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text.
-- **Challenges faced**: some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results.
-
-<strong>*</strong>: C-Eval results are evaluated on the validation datasets
-</details>
-
-### Base model performance
-
-#### Yi-34B and Yi-34B-200K 
-
-The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMMLU, common-sense reasoning, reading comprehension, and more.
-
-![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
-
-<details>
-<summary> Evaluation methods. ⬇️</summary>
-
-- **Disparity in results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
-- **Investigation findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
-- **Uniform benchmarking process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
-- **Efforts to retrieve unreported scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
-- **Extensive model evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
-- **Special configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
-- **Falcon-180B caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
-</details>
-
-#### Yi-9B
-
-Yi-9B is almost the best among a range of similar-sized open-source models (including Mistral-7B, SOLAR-10.7B, Gemma-7B, DeepSeek-Coder-7B-Base-v1.5 and more), particularly excelling in code, math, common-sense reasoning, and reading comprehension.
-
-![Yi-9B benchmark - details](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_details.png?raw=true)
-
-- In terms of **overall** ability (Mean-All), Yi-9B performs the best among similarly sized open-source models, surpassing DeepSeek-Coder, DeepSeek-Math, Mistral-7B, SOLAR-10.7B, and Gemma-7B.
-
-  ![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
-
-- In terms of **coding** ability (Mean-Code), Yi-9B's performance is second only to DeepSeek-Coder-7B, surpassing Yi-34B, SOLAR-10.7B, Mistral-7B, and Gemma-7B.
-
-  ![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
-
-- In terms of **math** ability (Mean-Math), Yi-9B's performance is second only to DeepSeek-Math-7B, surpassing SOLAR-10.7B, Mistral-7B, and Gemma-7B.
-
-  ![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
-
-- In terms of **common sense and reasoning** ability (Mean-Text), Yi-9B's performance is on par with Mistral-7B, SOLAR-10.7B, and Gemma-7B.
-
-  ![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
-
-</details>
+See the following pages for detailed benchmarking:
+- [Chat model performance](https://github.com/catchygit/Yi/wiki/Benchmarks#chat-model-performance)
+- [Base model performance](https://github.com/catchygit/Yi/wiki/Benchmarks#base-model-performance)
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
