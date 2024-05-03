@@ -558,11 +558,11 @@ You can access the web UI by entering the address provided in the console into y
 
 ### Fine-tuning
 
-[For details on fine-tuning.](https://github.com/catchygit/Yi/wiki/Fine-tuning)
+[See our wiki page for details on fine-tuning.](https://github.com/catchygit/Yi/wiki/Fine-tuning)
 
 ### Quantization
 
-[For details on quantization.](https://github.com/catchygit/Yi/wiki/Quantization)
+[See our wiki page for details on quantization.](https://github.com/catchygit/Yi/wiki/Quantization)
 
 ### Requirements
 
