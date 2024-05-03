@@ -152,6 +152,7 @@ Chat model limitations
       <li>To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as temperature, top_p, or top_k. These adjustments can help in the balance between creativity and coherence in the model's outputs.</li>
 
 </details>
+</details>
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
