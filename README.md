@@ -163,11 +163,7 @@ However, this higher diversity might amplify certain existing issues, including:
 
 # Quick start
 
-Getting up and running with Yi models is simple with multiple choices available. 
-
-### Choose your path
-
-Select one of the following paths to begin your journey with Yi!
+Getting up and running with Yi models is simple with multiple choices available. Select one of the following paths to begin your journey with Yi!
 
  ![Quick start - Choose your path](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png?raw=true)
 
