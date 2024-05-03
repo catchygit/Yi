@@ -562,14 +562,17 @@ You can access the web UI by entering the address provided in the console into y
 
 # Requirements
 
-Before using Yi quantized models, make sure you've installed the correct software listed below.
+<details>
+<summary>Before using Yi quantized models, make sure you've installed the correct software listed below. ⬇️</summary> 
 
 | Model | Software
 |---|---
 Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
 Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
+</details>
 
-Before deploying Yi in your environment, make sure your hardware meets the following requirements.
+<details>
+<summary>Before deploying Yi in your environment, make sure your hardware meets the following requirements. ⬇️</summary> 
 
 ### Chat models
 
@@ -602,6 +605,8 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 | Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
 | Yi-34B               | 72 GB         | 4 x RTX 4090 (24 GB) <br> 1 x A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
+
+</details>
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
