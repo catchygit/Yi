@@ -52,7 +52,7 @@
 </p> 
 
 <p align="center">
-    📚 Grow at <a href="https://github.com/catchygit/Yi/wiki"> Yi Wiki </a>
+    📚 Grow with the <a href="https://github.com/catchygit/Yi/wiki"> Yi Wiki </a>
 </p> 
 
 <!-- DO NOT REMOVE ME -->
