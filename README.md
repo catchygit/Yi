@@ -163,16 +163,12 @@ However, this higher diversity might amplify certain existing issues, including:
 # Requirements
 
 <details>
-<summary>Before using Yi quantized models, make sure you've installed the correct software listed below. ⬇️</summary> 
+<summary>Before using Yi quantized models, make sure you've installed the correct software listed below and your hardware meets the following requirements. ⬇️</summary> 
 
 | Model | Software
 |---|---
 Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
 Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
-</details>
-
-<details>
-<summary>Before deploying Yi in your environment, make sure your hardware meets the following requirements. ⬇️</summary> 
 
 ### Chat models
 
@@ -211,7 +207,6 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
-
 
 # Quick start
 
