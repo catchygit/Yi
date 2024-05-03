@@ -536,7 +536,10 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 
 ### Web demo
 
-You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario).
+<details>
+<summary>You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario). ⬇️</summary>
+<br>
+
 
 [Step 1: Prepare your environment](#step-1-prepare-your-environment). 
 
@@ -551,6 +554,7 @@ python demo/web_demo.py -c <your-model-path>
 You can access the web UI by entering the address provided in the console into your browser. 
 
  ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
+</details>
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
